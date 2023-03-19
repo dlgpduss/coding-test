@@ -22,3 +22,6 @@ elif total_min < 60:
         print(total_hour - 24, total_min)
     else:
         print(total_hour, total_min)
+
+
+# 더 간단한 방법 있는지 ㅜㅜ
