@@ -25,3 +25,12 @@ elif total_min < 60:
 
 
 # 더 간단한 방법 있는지 ㅜㅜ
+
+# H, M = map(int, input().split())
+# A = int(input())
+# M = M + A
+# H = H + M//60
+# M = M % 60
+# if (H>=24):
+#     H = H - 24
+# print(H, M)
