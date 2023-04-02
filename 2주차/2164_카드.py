@@ -1,18 +1,15 @@
-import sys
-sys.stdin.readline
+# n = int(input()) # 6
 
-n = int(input())
+# num = []
+# for i in range(1, n+1):
+#     num.append(i)
 
-num = []
-for i in range(1, n+1):
-    num.append(i)
+# while len(num) > 1:
+#         num.pop(0)
+#         a = num[0]
+#         num.append(a)
 
-while len(num) > 1:
-        num.pop(0)
-        a = num[0]
-        num.append(a)
-
-print(num)
+# print(num)
 
 '''
 1234 => 1버리기 1번쨰
@@ -23,3 +20,23 @@ print(num)
 4
 
 '''
+# from collections import deque
+
+# n = int(input()) # 6
+# # 1 2 3 4 5 6
+# card = deque(map(int, range(1, n+1)))
+# while len(card) > 1:
+#     card.popleft() # 맨 앞 카드를 버린다.
+#     card.append(card.popleft())
+# print(card[0]) # 4
+
+
+from collections import deque
+
+n = int(input())
+card = deque(map(int, range(1, n + 1)))
+
+while (len(card) > 1):
+    card.popleft() # 맨 앞 카드 버리기
+    card.append(card.popleft())
+print(card[0])
